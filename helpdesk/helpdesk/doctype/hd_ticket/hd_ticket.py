@@ -78,8 +78,8 @@ class HDTicket(Document):
         if self.get("description"):
             self.create_communication_via_contact(self.description, new_ticket=True)
 
-        if not self.via_customer_portal:
-            self.send_acknowledgement_email()
+        #if not self.via_customer_portal:
+        #    self.send_acknowledgement_email()
 
     def on_update(self):
         # flake8: noqa

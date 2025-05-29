@@ -11,7 +11,9 @@
  "field_order": [
   "is_system",
   "description",
-  "priority"
+  "priority",
+  "template",
+  "template_text"
  ],
  "fields": [
   {
@@ -32,10 +34,23 @@
    "fieldtype": "Check",
    "label": "System",
    "read_only": 1
+  },
+  {
+   "fieldname": "template",
+   "fieldtype": "Link",
+   "label": "Ticket Template",
+   "options": "HD Ticket Template",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "template.description_template",
+   "fieldname": "template_text",
+   "fieldtype": "Text Editor",
+   "label": "Template Text"
   }
  ],
  "links": [],
- "modified": "2025-02-17 17:19:18.747328",
+ "modified": "2025-05-29 10:54:52.881531",
  "modified_by": "Administrator",
  "module": "Helpdesk",
  "name": "HD Ticket Type",
@@ -98,6 +113,7 @@
   }
  ],
  "quick_entry": 1,
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

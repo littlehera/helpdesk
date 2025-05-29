@@ -120,7 +120,8 @@
    "fieldname": "ticket_type",
    "fieldtype": "Link",
    "label": "Ticket Type",
-   "options": "HD Ticket Type"
+   "options": "HD Ticket Type",
+   "reqd": 1
   },
   {
    "fieldname": "agent_group",
@@ -143,19 +144,23 @@
    "label": "Details"
   },
   {
-   "bold": 1,
+   "fetch_from": "template.description_template",
+   "fetch_if_empty": 1,
    "fieldname": "description",
    "fieldtype": "Text Editor",
-   "in_global_search": 1,
    "label": "Description",
    "oldfieldname": "problem_description",
-   "oldfieldtype": "Text"
+   "oldfieldtype": "Text",
+   "reqd": 1
   },
   {
+   "fetch_from": "ticket_type.template",
+   "fetch_if_empty": 1,
    "fieldname": "template",
    "fieldtype": "Link",
    "label": "Template",
-   "options": "HD Ticket Template"
+   "options": "HD Ticket Template",
+   "read_only": 1
   },
   {
    "collapsible": 1,
@@ -380,11 +385,13 @@
    "label": "Feedback (Text)"
   },
   {
+   "depends_on": "eval:frappe.user.has_role(\"Agent\")||frappe.user.has_role(\"System Manager\")",
    "fieldname": "sla_tab",
    "fieldtype": "Tab Break",
    "label": "SLA"
   },
   {
+   "depends_on": "eval:frappe.user.has_role(\"Agent\")||frappe.user.has_role(\"System Manager\")",
    "fieldname": "response_tab",
    "fieldtype": "Tab Break",
    "label": "Response"
@@ -395,6 +402,7 @@
    "label": "Resolution"
   },
   {
+   "depends_on": "eval:frappe.user.has_role(\"Agent\")||frappe.user.has_role(\"System Manager\")",
    "fieldname": "reference_tab",
    "fieldtype": "Tab Break",
    "label": "Reference"
@@ -412,6 +420,7 @@
   {
    "fieldname": "summary",
    "fieldtype": "Text Editor",
+   "hidden": 1,
    "label": "Summary"
   },
   {
@@ -438,7 +447,7 @@
  "icon": "fa fa-issue",
  "idx": 61,
  "links": [],
- "modified": "2025-05-19 10:53:38.184632",
+ "modified": "2025-05-29 11:31:02.933155",
  "modified_by": "Administrator",
  "module": "Helpdesk",
  "name": "HD Ticket",
@@ -493,7 +502,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "row_format": "Dynamic",
  "search_fields": "status,subject,raised_by",
  "sender_field": "raised_by",

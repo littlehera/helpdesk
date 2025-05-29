@@ -32,12 +32,12 @@ scheduler_events = {
 }
 
 
-website_route_rules = [
-    {
-        "from_route": "/helpdesk/<path:app_path>",
-        "to_route": "helpdesk",
-    },
-]
+# website_route_rules = [
+#     {
+#         "from_route": "/helpdesk/<path:app_path>",
+#         "to_route": "helpdesk",
+#     },
+# ]
 
 doc_events = {
     "Contact": {
@@ -74,6 +74,6 @@ ignore_links_on_delete = [
 setup_wizard_complete = "helpdesk.setup.setup_wizard.setup_complete"
 
 
-website_route_rules = [
-    {"from_route": "/helpdesk/<path:app_path>", "to_route": "helpdesk"},
-]
+# website_route_rules = [
+#     {"from_route": "/helpdesk/<path:app_path>", "to_route": "helpdesk"},
+# ]
