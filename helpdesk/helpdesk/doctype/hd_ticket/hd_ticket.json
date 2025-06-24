@@ -91,7 +91,8 @@
    "label": "Raised By (Email)",
    "oldfieldname": "raised_by",
    "oldfieldtype": "Data",
-   "options": "Email"
+   "options": "Email",
+   "read_only": 1
   },
   {
    "default": "Open",
@@ -447,7 +448,7 @@
  "icon": "fa fa-issue",
  "idx": 61,
  "links": [],
- "modified": "2025-05-29 11:31:02.933155",
+ "modified": "2025-06-24 13:37:22.318371",
  "modified_by": "Administrator",
  "module": "Helpdesk",
  "name": "HD Ticket",
