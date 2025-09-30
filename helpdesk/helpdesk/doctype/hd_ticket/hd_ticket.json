@@ -15,6 +15,7 @@
   "status",
   "priority",
   "cb00",
+  "branch",
   "ticket_type",
   "agent_group",
   "summary",
@@ -451,13 +452,20 @@
    "label": "System where Issue is Encountered",
    "options": "\nAcumatica\nBarter\nGERP\nTAILERP",
    "reqd": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "icon": "fa fa-issue",
  "idx": 61,
  "links": [],
- "modified": "2025-09-30 15:26:39.062986",
+ "modified": "2025-09-30 15:46:30.275580",
  "modified_by": "Administrator",
  "module": "Helpdesk",
  "name": "HD Ticket",
