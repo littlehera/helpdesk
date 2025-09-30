@@ -21,7 +21,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-30 15:49:22.633626",
+ "modified": "2025-09-30 15:58:36.601029",
  "modified_by": "Administrator",
  "module": "Helpdesk",
  "name": "Department",
@@ -42,12 +42,24 @@
   },
   {
    "email": 1,
-   "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "All",
-   "share": 1
+   "role": "Grocery User"
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Department Store User"
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Executive"
   }
  ],
  "row_format": "Dynamic",
