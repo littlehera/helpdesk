@@ -13,19 +13,19 @@ from .welcome_ticket import create_welcome_ticket
 
 
 def after_install():
-    add_default_categories_and_articles()
+    #add_default_categories_and_articles()
     add_default_ticket_priorities()
     add_default_sla()
     add_default_agent_groups()
     update_agent_role_permissions()
     add_agent_manager_permissions()
-    add_default_assignment_rule()
+    #add_default_assignment_rule()
     add_system_preset_filters()
     create_default_template()
     create_fallback_ticket_type()
     create_helpdesk_folder()
     create_ootb_ticket_types()
-    create_welcome_ticket()
+    #create_welcome_ticket()
     create_ticket_feedback_options()
     add_property_setter()
 
@@ -183,7 +183,7 @@ def add_default_ticket_priorities():
 
 
 def add_default_agent_groups():
-    agent_groups = ["Billing", "Product Experts"]
+    agent_groups = ["Implementation Team", "System Administrators", "Data Team"]
 
     for agent_group in agent_groups:
         if not frappe.db.exists("HD Team", agent_group):
