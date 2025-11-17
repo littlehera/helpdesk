@@ -22,7 +22,7 @@ def after_install():
     #add_default_assignment_rule()
     add_system_preset_filters()
     create_default_template()
-    create_fallback_ticket_type()
+    #create_fallback_ticket_type()
     create_helpdesk_folder()
     create_ootb_ticket_types()
     #create_welcome_ticket()
