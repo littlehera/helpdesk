@@ -24,7 +24,7 @@ def after_install():
     create_default_template()
     #create_fallback_ticket_type()
     create_helpdesk_folder()
-    create_ootb_ticket_types()
+    #create_ootb_ticket_types()
     #create_welcome_ticket()
     create_ticket_feedback_options()
     add_property_setter()
