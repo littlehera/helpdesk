@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:department",
  "creation": "2025-09-30 15:48:36.647845",
@@ -21,7 +22,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-30 15:58:36.601029",
+ "modified": "2025-11-17 18:06:51.564733",
  "modified_by": "Administrator",
  "module": "Helpdesk",
  "name": "Department",
@@ -63,6 +64,7 @@
   }
  ],
  "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
